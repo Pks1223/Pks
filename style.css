@@ -1,0 +1,432 @@
+* {
+ margin: 0px;
+ padding: 0px;
+ font-family: 'Acme', sans-serif;
+}
+
+html {
+ font-size: 62.5%;
+}
+
+/* nav bar styling  start */
+.navbar {
+ background-color: #4bbf87;
+ /* height: 5.5rem; */
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ padding: 1rem;
+}
+
+.navbar .logo {
+ height: 4.9rem;
+ padding: .1rem;
+ border-radius: .6rem;
+ box-shadow: 0 0 2rem .2rem rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+ text-decoration: none;
+ color: inherit;
+ font-size: 2rem;
+}
+
+.navbar a:hover {
+ color: white;
+ text-decoration: underline;
+}
+
+.list {
+ list-style: none;
+ display: flex;
+ gap: 1.5rem;
+ padding-right: 2rem;
+}
+
+#tog,
+.navbar label {
+ display: none;
+}
+
+/* navbar styling ended <<main section start>> */
+span,
+h2 {
+ color: #4bbf87;
+}
+
+h2 {
+ text-align: center;
+ padding-top: 2rem;
+ text-decoration: underline;
+}
+
+#name {
+ font-family: 'Pacifico', cursive;
+ font-size: 1.8rem;
+}
+
+.ytlink {
+ color: #4bbf87;
+}
+
+#pic {
+ height: 23rem;
+ box-shadow: 0 0 2rem .2rem rgba(25, 227, 150, 0.3);
+}
+
+.home {
+ height: 28rem;
+ display: flex;
+ flex-direction: column;
+}
+
+.home .home-content {
+ display: flex;
+}
+
+.home .home-content .left {
+ margin: 8rem 0 0 5rem;
+ font-size: 2rem;
+}
+
+.home .home-content .left .text-3 {
+ font-size: 1rem;
+}
+
+.home .home-content .right {
+ margin: 3rem 0 0 40rem;
+}
+
+/* service section start */
+.service {
+ background-color: black;
+ color: white;
+}
+
+.service .mcard {
+ display: flex;
+}
+
+.service .mcard .card {
+ border-radius: .6rem;
+ margin: 5rem 3rem 5rem 3rem;
+ background-color: #2d2e2d;
+ height: 10rem;
+ width: 25rem;
+ padding: 1.5rem 0 0 1.5rem;
+}
+
+.service .mcard .card .box {
+ transition: all 0.3s ease;
+}
+
+.service .mcard .card:hover .cl {
+ color: black;
+}
+
+.service .mcard .card:hover {
+ background-color: #4bbf87;
+}
+
+.service .mcard .card:hover .box,
+.skill .skill-content .column-left:hover,
+.column-right:hover {
+ transform: scale(1.1);
+}
+
+.service .mcard .card .text {
+ font-size: 1.5rem;
+ text-align: center;
+}
+
+.service .mcard .card p {
+ padding: 1rem 1rem 0 1rem;
+}
+
+/* skill section */
+.skill {
+ background-color: whitesmoke;
+ height: 33rem;
+}
+
+.skill .skill-content {
+ display: flex;
+}
+
+.skill .skill-content .column-left,
+.column-right {
+ width: 35rem;
+ margin: 3rem;
+ height: 18rem;
+ padding: 2rem;
+ background-color: white;
+ box-shadow: 0 0 2rem .2rem rgba(0, 0, 0, 0.3);
+ transition: all 0.3s ease;
+}
+
+.skill .skill-content .column-left:hover,
+.column-right:hover,
+.start-c .course-c .cpp-c:hover,
+.java-c:hover,
+.css-c:hover,
+.html-c:hover {
+ box-shadow: 0 0 2rem .2rem rgba(25, 227, 150, 0.3);
+}
+
+.skill .skill-content .column-left .text {
+ font-size: 1.5rem;
+}
+
+.skill .skill-content .column-right .bars {
+ margin: 1.2rem;
+}
+
+.skill .skill-content .column-right .info {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.skill .skill-content .column-right .line {
+ height: .3rem;
+ width: 100%;
+ background: lightgray;
+ position: relative;
+}
+
+.skill .skill-content .column-right .line::before {
+ content: "";
+ position: absolute;
+ height: 100%;
+ left: 0;
+ top: 0;
+ background: #4bbf87;
+}
+
+.skill .skill-content .column-right .html::before {
+ width: 55%;
+}
+
+.skill .skill-content .column-right .css::before {
+ width: 35%;
+}
+
+.skill .skill-content .column-right .java::before {
+ width: 2%;
+}
+
+.skill .skill-content .column-right .php::before {
+ width: 0%;
+}
+
+.skill .skill-content .column-right .sql::before {
+ width: 10%;
+}
+
+.skill .skill-content .column-right .cpp::before {
+ width: 85%;
+}
+
+/* footer section */
+footer {
+ background-color: whitesmoke;
+ text-align: center;
+ padding-bottom: 2rem;
+ height: 5rem;
+}
+
+footer img {
+ height: 2rem;
+ padding: 1rem;
+}
+
+/* Course section start */
+.start-c .top {
+ text-align: center;
+ font-size: 2.5rem;
+ padding-top: 1.5rem;
+ text-decoration: underline;
+}
+
+.start-c .course-c .cpp-c,
+.java-c,
+.css-c,
+.html-c {
+ display: flex;
+ margin: 5rem;
+ background-color: whitesmoke;
+ border: .5rem solid #4bbf87;
+}
+
+.start-c .course-c .cpp-c .course-name p,
+.java-c p,
+.css-c p,
+.html-c p {
+ color: #4bbf87;
+ font-size: 2rem;
+ text-align: center;
+ padding: 2rem;
+}
+
+.start-c .course-c .cpp-c .course-name .course-text,
+.java-c .course-text,
+.css-c .course-text,
+.html-c .course-text {
+ padding: 1rem;
+ font-size: 1.5rem;
+}
+
+/* Contact page start */
+.contact {
+ position: relative;
+ min-height: 100vh;
+ padding: 5rem 10rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.contact .ccontent {
+ max-width: 80rem;
+ text-align: center;
+}
+
+.contact .ccontent h2 {
+ font-size: 3.6rem;
+ font-weight: 500;
+ color: #4bbf87;
+}
+
+.ccontent p {
+ font-size: 1.5rem;
+}
+
+.container-2 {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 3rem;
+}
+
+.container-2 .contactinfo {
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+}
+
+.container-2 .contactinfo .box {
+ position: relative;
+ padding: 2rem 0;
+ display: flex;
+}
+
+.container-2 .contactinfo .box .text {
+ display: flex;
+ margin-left: 2rem;
+ font-size: 1.5rem;
+ color: black;
+ flex-direction: column;
+ font-weight: 300;
+}
+
+.container-2 .contactinfo .box .text h3 {
+ font-weight: 500;
+ color: #4bbf87;
+}
+
+.contactform {
+ width: 40%;
+ padding: 4rem;
+ background: whitesmoke;
+}
+
+.contactform h2 {
+ font-size: 3rem;
+ color: black;
+ font-weight: 500;
+}
+
+.contactform .inputbox {
+ position: relative;
+ width: 100%;
+ margin-top: 1rem;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+ width: 100%;
+ padding: .5rem 0;
+ font-size: 1.5rem;
+ margin: 1rem 0;
+ border: none;
+ border-bottom: .2rem solid black;
+ outline: none;
+ resize: none;
+}
+
+.contactform .inputbox span {
+ position: absolute;
+ left: 0;
+ padding: .5rem 0;
+ font-size: 1.6rem;
+ margin: 1rem 0;
+ pointer-events: none;
+ transition: 0.5s;
+ color: black;
+}
+
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span,
+.contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span {
+ color: #4bbf87;
+ font-size: 1.2rem;
+ transform: translateY(-2rem);
+}
+
+.contactform .inputbox input[type="submit"] {
+ width: 10rem;
+ background: #4bbf87;
+ color: black;
+ border: none;
+ cursor: pointer;
+ padding: 1rem;
+ font-size: 1.8rem;
+}
+
+.home-a {
+ height: 30rem;
+}
+
+.about-us {
+ font-size: 2rem;
+ text-align: center;
+ padding: 2rem;
+ color: #4bbf87;
+}
+
+.article p {
+ font-size: 1.5rem;
+ padding-left: 2rem;
+}
+
+
+
+
+@media(max-width:60rem) {
+ html {
+  font-size: 35%;
+ }
+.home .home-content .right {
+ margin: 3rem 0 0 15rem;
+}
+.contact{
+ height: 20rem;
+}
+.contact .ccontent{
+ padding-top: 2rem;
+}
+}
