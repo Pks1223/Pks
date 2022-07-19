@@ -413,20 +413,72 @@ footer img {
  padding-left: 2rem;
 }
 
-
-
-
 @media(max-width:60rem) {
- html {
-  font-size: 35%;
+/*  html { */
+/*   font-size: 35%; */
+/*  } */
+  .navbar a {
+  font-size: 1.5rem;
  }
-.home .home-content .right {
- margin: 3rem 0 0 15rem;
-}
-.contact{
+.home{
  height: 20rem;
 }
-.contact .ccontent{
+ .home .home-content .left {
+  margin: 6rem 0 0 1rem;
+  font-size: 1.5rem;
+ }
+ #pic{
+  height: 15rem;
+ }
+ .home .home-content .right {
+  margin: 3rem 1rem 0 5rem;
+ }
+ .service .mcard .card{
+  width: 28rem;
+ }
+ .contact{
+ height: 20rem;
+ }
+ .contact .ccontent{
  padding-top: 2rem;
+ }
+.service .mcard{
+ display: block;
+}
+.service{
+ height: 60rem;
+}
+ .skill .skill-content {
+ display: block;
+}
+.skill{
+ height: 55rem;
+}
+.skill .skill-content .column-left,
+.column-right {
+ width: 26rem;
+}
+.start-c .course-c .cpp-c,
+.java-c,
+.css-c,
+.html-c {
+ display: block;
+ margin: 2rem;
+}
+.contact {
+ padding: 5rem 0rem;
+}
+.container-2 {
+ display: block;
+ margin-top: 3rem;
+}
+.container-2 .contactinfo{
+ width: 80%;
+}
+.container-2 .contactform{
+ width:  78%;
+}
+.home-a {
+ height: 55rem;
 }
 }
